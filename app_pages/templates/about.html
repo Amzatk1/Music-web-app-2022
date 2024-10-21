@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans "About" %}{% endblock %}
+
+{% block content %}
+<article class="centered-container">
+    <header>
+        <h1>{% trans "About Music Maestro" %}</h1>
+    </header>
+
+    <p>{% trans "Welcome to Music Maestro – a digital haven for music lovers and artistic minds.Dive into the world of rhythms and notes as we provide you with unparalledled musical exprience" %}</p>
+    
+    <section class="about-section">
+        <h2>{% trans "Our Mission" %}</h2>
+        <p>{% trans "Our mission is to create a vibrant,accessible and welcoming space where music enthusiasts can explore, discover, enjoy and collectivly come together as a whole to get access to a wide range of musical genres and artists from around the globe." %}</p>
+    </section>
+
+    <section class="about-section">
+        <h2>{% trans "What We Offer" %}</h2>
+        <p>{% trans "From the latest hits to timeless classics of different genres, our expansive catalogue caters to all tastes, likes and preferences. We offer a user-friendly platform to our users to listen to, and purchase your favorite albums and tracks." %}</p>
+    </section>
+
+    <section class="about-section">
+        <h2>{% trans "Join Our Community" %}</h2>
+        <p>{% trans "Join our growing community of music fans and artists. Share your thoughts, engage in discussions and dialogue, and stay updated with the latest trends and releases in the world of music at large." %}</p>
+    </section>
+</article>
+{% endblock %}

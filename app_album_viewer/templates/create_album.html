@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section class="create-album-container">
+    <header>
+        <h2>{% trans "Create Album" %}</h2>
+    </header>
+
+    <form class="album-form" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">{% trans "Create Album" %}</button>
+    </form>
+</section>
+
+<style>
+    .create-album-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        color: #fff; 
+        text-align: center;
+    }
+
+    header h2 {
+        margin-bottom: 20px;
+    }
+
+    .album-form {
+        background-color: #f8f9fa; 
+        padding: 20px;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    .album-form p {
+        color: #333; 
+    }
+
+    .btn.btn-primary {
+        background-color: #007bff; 
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .btn.btn-primary:hover {
+        background-color: #0056b3; 
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+        .create-album-container {
+            padding: 10px;
+        }
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+    {% trans "Contact" %}
+{% endblock %}
+
+{% block content %}
+    <section class="centered-container">
+        <header>
+            <h1>{% trans "Contact Us" %}</h1>
+        </header>
+        <p>{% trans "Got a question, feedback, or just want to say hello? Get in touch with us!" %}</p>
+
+        <!-- Contact Section -->
+        <article class="contact-section">
+            <h2>{% trans "Reach Out to Us" %}</h2>
+            <p>{% trans "Feel free to drop us a line via email or give us a call. We're here to help and answer any question you might have." %}</p>
+            <p><strong>{% trans "Email:" %}</strong> contact@musicmaestro.com</p>
+            <p><strong>{% trans "Phone:" %}</strong> +123 456 7890</p>
+        </article>
+
+        <!-- Office Location Section -->
+        <article class="office-location">
+            <h2>{% trans "Our Office Location" %}</h2>
+            <p>{% trans "Visit us at our office! We'd love to meet you in person." %}</p>
+            <p><strong>{% trans "Address:" %}</strong>123 AK Street, Guildford, Surrey</p>
+        </article>
+
+        <!-- Social Media Section -->
+        <article class="social-media">
+            <h2>{% trans "Connect with Us on Social Media" %}</h2>
+            <p>{% trans "Stay updated and engaged by following us on social media." %}</p>
+            <p><strong>{% trans "Facebook:" %}</strong> <a href="https://facebook.com/musicmaestro" target="_blank">MusicMaestro</a></p>
+            <p><strong>{% trans "Twitter:" %}</strong> <a href="https://twitter.com/musicmaestro" target="_blank">@MusicMaestro</a></p>
+        </article>
+    </section>
+{% endblock %}

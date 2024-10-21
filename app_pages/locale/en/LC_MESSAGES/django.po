@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-12 22:07-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: app_pages/templates/about.html:5
+msgid "About"
+msgstr ""
+
+#: app_pages/templates/about.html:10
+msgid "About Music Maestro"
+msgstr ""
+
+#: app_pages/templates/about.html:13
+msgid ""
+"Welcome to Music Maestro – a digital haven for music lovers and artists "
+"alike."
+msgstr ""
+
+#: app_pages/templates/about.html:16
+msgid "Our Mission"
+msgstr ""
+
+#: app_pages/templates/about.html:17
+msgid ""
+"Our mission is to create a vibrant and accessible space where music "
+"enthusiasts can explore, discover, and enjoy a wide range of musical genres "
+"and artists from around the globe."
+msgstr ""
+
+#: app_pages/templates/about.html:21
+msgid "What We Offer"
+msgstr ""
+
+#: app_pages/templates/about.html:22
+msgid ""
+"From the latest hits to timeless classics, our expansive catalogue caters to "
+"all tastes and preferences. We offer a user-friendly platform to browse, "
+"listen to, and purchase your favorite albums and tracks."
+msgstr ""
+
+#: app_pages/templates/about.html:26
+msgid "Join Our Community"
+msgstr ""
+
+#: app_pages/templates/about.html:27
+msgid ""
+"Join our growing community of music fans and artists. Share your thoughts, "
+"engage in discussions, and stay updated with the latest trends and releases "
+"in the world of music."
+msgstr ""
+
+#: app_pages/templates/account.html:5
+msgid "Account"
+msgstr ""
+
+#: app_pages/templates/account.html:10
+msgid "Welcome, {{ request.user.username }}!"
+msgstr ""
+
+#: app_pages/templates/account.html:15
+msgid "Username:"
+msgstr ""
+
+#: app_pages/templates/account.html:16 app_pages/templates/contact.html:17
+msgid "Email:"
+msgstr ""
+
+#: app_pages/templates/account.html:22
+msgid "Your Comments:"
+msgstr ""
+
+#: app_pages/templates/account.html:31
+msgid "No comments yet."
+msgstr ""
+
+#: app_pages/templates/contact.html:5
+msgid "Contact"
+msgstr ""
+
+#: app_pages/templates/contact.html:10
+msgid "Contact Us"
+msgstr ""
+
+#: app_pages/templates/contact.html:12
+msgid ""
+"Got a question, feedback, or just want to say hello? Get in touch with us!"
+msgstr ""
+
+#: app_pages/templates/contact.html:15
+msgid "Reach Out to Us"
+msgstr ""
+
+#: app_pages/templates/contact.html:16
+msgid ""
+"Feel free to drop us a line via email or give us a call. We're here to help "
+"and answer any question you might have."
+msgstr ""
+
+#: app_pages/templates/contact.html:18
+msgid "Phone:"
+msgstr ""
+
+#: app_pages/templates/home.html:5
+msgid "Home"
+msgstr ""
+
+#: app_pages/templates/home.html:10
+msgid "Welcome to the Music Catalogue"
+msgstr ""
+
+#: app_pages/templates/home.html:13
+msgid ""
+"Embark on a musical journey with Music Maestro - where every note and key "
+"finds its digital home on our sleek page"
+msgstr ""
+
+#: app_pages/templates/login.html:8 app_pages/templates/login.html:22
+msgid "Login"
+msgstr ""
+
+#: app_pages/templates/send_recommendation.html:5
+msgid "Recommend Album"
+msgstr ""
+
+#: app_pages/templates/send_recommendation.html:10
+msgid "Recommend '{{ album.title }}' to a Friend"
+msgstr ""
+
+#: app_pages/templates/send_recommendation.html:16
+msgid "Send Recommendation"
+msgstr ""

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+<section class="auth-form">
+    <header>
+        <h2>{% trans "Edit Album:" %} {{ album.title }}</h2>
+    </header>
+
+    <!-- Album details -->
+    <form method="post" enctype="multipart/form-data" style="margin-bottom: 3rem;">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-secondary">{% trans "Save Album Details" %}</button>
+    </form>
+</section>
+{% endblock %}

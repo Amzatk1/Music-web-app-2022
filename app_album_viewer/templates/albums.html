@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "All Albums" %}{% endblock %}
+
+{% block content %}
+    <nav class="album-management">
+        <a href="{% url 'create_album' %}" class="btn btn-success" style="margin-bottom: 2rem;">{% trans "Create Album" %}</a>
+    </nav>
+
+    <section class="albums" style="margin-bottom: 5rem;">
+        {% for album in albums %}
+            <article class="album">
+                <a href="{% url 'album_info' album.id %}">
+                    <figure>
+                        {% if album.cover %}
+                            <img src="{{ album.cover.url }}" alt="{{ album.title }} {% trans 'Cover' %}">
+                        {% else %}
+                            <img src="{% static 'default_cover.jpg' %}" alt="{% trans 'Default Cover' %}">
+                        {% endif %}
+                        <figcaption>
+                            <h2>{{ album.title }}</h2>
+                        </figcaption>
+                    </figure>
+                </a>
+                <p>{% trans 'Artist:' %} {{ album.artist }}</p>
+                <p>{% trans 'Number of Comments:' %} {{ album.num_comments }}</p>
+                
+                <div class="album-actions">
+                    <a href="{% url 'edit_album' album.id %}" class="btn btn-primary">{% trans 'Edit' %}</a>
+                    <a href="{% url 'delete_album' album.id %}" class="btn btn-danger">{% trans 'Delete' %}</a>
+                </div>
+            </article>
+        {% endfor %}
+    </section>
+{% endblock %}

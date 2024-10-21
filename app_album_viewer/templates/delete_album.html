@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Confirm Delete:" %} {{ album.title }}{% endblock %}
+
+{% block content %}
+<section class="confirmation">
+    <header>
+        <h2>{% trans "Confirm Delete" %}</h2>
+    </header>
+
+    <p>{% trans "Are you sure you want to delete the album" %} "{{ album.title }}"?</p>
+    
+    <form method="post" class="delete-confirmation-form">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">{% trans "Delete" %}</button>
+        <a href="{% url 'album_info' album.id %}" class="btn btn-secondary">{% trans "Cancel" %}</a>
+    </form>
+</section>
+{% endblock %}

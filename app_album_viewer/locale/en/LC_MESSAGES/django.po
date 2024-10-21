@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-12 22:07-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: app_album_viewer/templates/album_info.html:4
+msgid "Album Details: "
+msgstr ""
+
+#: app_album_viewer/templates/album_info.html:9
+msgid "Recommend Album"
+msgstr ""
+
+#: app_album_viewer/templates/album_info.html:16
+#: app_album_viewer/templates/albums.html:19
+msgid "Cover"
+msgstr ""
+
+#: app_album_viewer/templates/album_info.html:20
+#: app_album_viewer/templates/albums.html:28
+msgid "Artist:"
+msgstr ""
+
+#: app_album_viewer/templates/album_info.html:21
+msgid "Format:"
+msgstr ""
+
+#: app_album_viewer/templates/album_info.html:22
+msgid "Description:"
+msgstr ""
+
+#: app_album_viewer/templates/album_info.html:26
+msgid "Songs:"
+msgstr ""
+
+#: app_album_viewer/templates/album_info.html:29
+msgid "Duration:"
+msgstr ""
+
+#: app_album_viewer/templates/album_info.html:29
+msgid "seconds"
+msgstr ""
+
+#: app_album_viewer/templates/album_info.html:31
+msgid "No songs available."
+msgstr ""
+
+#: app_album_viewer/templates/album_info.html:37
+msgid "Comments"
+msgstr ""
+
+#: app_album_viewer/templates/album_info.html:44
+msgid "No comments yet."
+msgstr ""
+
+#: app_album_viewer/templates/album_info.html:52
+msgid "Post Comment"
+msgstr ""
+
+#: app_album_viewer/templates/album_info.html:55
+msgid "You must be logged in to post comments."
+msgstr ""
+
+#: app_album_viewer/templates/albums.html:6
+msgid "All Albums"
+msgstr ""
+
+#: app_album_viewer/templates/albums.html:10
+#: app_album_viewer/templates/create_album.html:9
+#: app_album_viewer/templates/create_album.html:15
+msgid "Create Album"
+msgstr ""
+
+#: app_album_viewer/templates/albums.html:21
+msgid "Default Cover"
+msgstr ""
+
+#: app_album_viewer/templates/albums.html:29
+msgid "Number of Comments:"
+msgstr ""
+
+#: app_album_viewer/templates/albums.html:32
+msgid "Edit"
+msgstr ""
+
+#: app_album_viewer/templates/albums.html:33
+#: app_album_viewer/templates/delete_album.html:17
+msgid "Delete"
+msgstr ""
+
+#: app_album_viewer/templates/delete_album.html:5
+msgid "Confirm Delete:"
+msgstr ""
+
+#: app_album_viewer/templates/delete_album.html:10
+msgid "Confirm Delete"
+msgstr ""
+
+#: app_album_viewer/templates/delete_album.html:13
+msgid "Are you sure you want to delete the album"
+msgstr ""
+
+#: app_album_viewer/templates/delete_album.html:18
+msgid "Cancel"
+msgstr ""
+
+#: app_album_viewer/templates/edit_album.html:8
+msgid "Edit Album:"
+msgstr ""
+
+#: app_album_viewer/templates/edit_album.html:15
+msgid "Save Album Details"
+msgstr ""

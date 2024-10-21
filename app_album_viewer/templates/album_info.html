@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Album Details: " %}{{ album.title }}{% endblock %}
+
+{% block content %}
+    <section class="email-recommendation">
+        <a href="{% url 'recommend_album' album.id %}" class="btn btn-secondary">
+            {% trans "Recommend Album" %}
+        </a>
+    </section>
+
+    <section class="album-detail text-center" style="margin-bottom: 80px; color: black;">
+        <header>
+            <h2>{{ album.title }}</h2>
+            <img src="{{ album.cover.url }}" alt="{{ album.title }} {% trans "Cover" %}" class="album-cover">
+        </header>
+
+        <article>
+            <p><strong>{% trans "Artist:" %}</strong> {{ album.artist }}</p>
+            <p><strong>{% trans "Format:" %}</strong> {{ album.format }}</p>
+            <p><strong>{% trans "Description:" %}</strong> {{ album.description }}</p>
+        </article>
+
+        <section class="songs">
+            <h3>{% trans "Songs:" %}</h3>
+            <ul class="song-list">
+                {% for song in songs_with_duration %}
+                    <li>{{ song.title }} - {% trans "Duration:" %} {{ song.runtime }} {% trans "seconds" %}</li>
+                {% empty %}
+                    <li>{% trans "No songs available." %}</li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <section class="comments">
+            <h3>{% trans "Comments" %}</h3>
+            {% for comment in comments %}
+                <div class="comment">
+                    <p class="comment-user">{{ comment.user_display_name }}:</p>
+                    <p class="comment-message">{{ comment.message }}</p>
+                </div>
+            {% empty %}
+                <p class="comment-user">{% trans "No comments yet." %}</p>
+            {% endfor %}
+        </section>
+
+        {% if request.user.is_authenticated %}
+            <form method="post" class="comment-form">
+                {% csrf_token %}
+                {{ comment_form.as_p }}
+                <button type="submit" class="btn btn-primary">{% trans "Post Comment" %}</button>
+            </form>
+        {% else %}
+            <p>{% trans "You must be logged in to post comments." %}</p>
+        {% endif %}
+    </section>
+{% endblock %}

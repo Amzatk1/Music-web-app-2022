@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+    {% trans "Welcome" %}
+{% endblock %}
+
+{% block content %}
+    <section class="centered-container welcome-container">
+        <header>
+            {% if request.user.is_authenticated %}
+                <h2 style="color: black;">{% trans "Welcome!" %}</h2>
+            {% else %}
+                <h2 style="color: black;">{% trans "Welcome" %}</h2>
+            {% endif %}
+        </header>
+
+        <!-- Display account information for user -->
+        <article class="account-info">
+            {% if request.user.is_authenticated %}
+                <p><strong>{% trans "Email:" %}</strong> {{ request.user.email }}</p>
+            {% else %}
+                <p>{% trans " Please log in to view your account information." %}</p>
+            {% endif %}
+        </article>
+    </section>
+{% endblock %}

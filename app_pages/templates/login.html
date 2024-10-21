@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+    <section class="auth-form">
+        <header>
+            <h1>{% trans "Login" %}</h1>
+        </header>
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <!-- Display error message if it exists -->
+            {% if error_message %}
+                <div class="error-message">
+                    {{ error_message }}
+                </div>
+            {% endif %}
+
+            <div>
+                <input type="checkbox" id="show-password" onchange="togglePassword()">
+                <label for="show-password" style="color: black;">{% trans "Show Password" %}</label>
+            </div>
+
+            <button type="submit">{% trans "Login" %}</button>
+        </form>
+    </section>
+
+    <script>
+        function togglePassword() {
+            var passwordInput = document.getElementById('id_password');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+            } else {
+                passwordInput.type = 'password';
+            }
+        }
+    </script>
+{% endblock %}
